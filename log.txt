@@ -1,0 +1,262 @@
+2024-09-04 20:27:26,762 - command.basic.logger_config - ERROR - Telegram server says - Bad Request: can't parse entities: Unexpected end of name token at byte offset 330
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 43, in command_start_handler
+    await message.answer(welcame_text, reply_markup=keyboard)
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end of name token at byte offset 330
+2024-09-04 20:27:29,162 - command.basic.logger_config - ERROR - Telegram server says - Bad Request: can't parse entities: Unexpected end of name token at byte offset 330
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 43, in command_start_handler
+    await message.answer(welcame_text, reply_markup=keyboard)
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+  File "c:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unexpected end of name token at byte offset 330
+2024-09-14 18:26:27,235 - command.basic.logger_config - ERROR - local variable 'url' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 42, in post_programmed
+    await bot.send_message(cur8_channel, url)
+UnboundLocalError: local variable 'url' referenced before assignment
+2024-09-14 18:31:20,339 - command.basic.logger_config - ERROR - time data '2024-09-14T18:31' does not match format '%Y-%m-%d %H:%M:%S'
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 22, in post_programmed
+    post_info = self.db.get_program_post_data(now)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 288, in get_program_post_data
+    datetime_obj = datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
+  File "C:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2024-09-14T18:31' does not match format '%Y-%m-%d %H:%M:%S'
+2024-09-14 18:33:44,522 - command.basic.logger_config - ERROR - time data '2024-09-14T18:33' does not match format '%Y-%m-%d %H:%M:%S'
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 22, in post_programmed
+    post_info = self.db.get_program_post_data(now)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 288, in get_program_post_data
+    datetime_obj = datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
+  File "C:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2024-09-14T18:33' does not match format '%Y-%m-%d %H:%M:%S'
+2024-09-14 18:41:32,293 - command.basic.logger_config - ERROR - time data '2024-09-14T18:41' does not match format '%Y-%m-%d %H:%M:%S'
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 22, in post_programmed
+    post_info = self.db.get_program_post_data(now)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 288, in get_program_post_data
+    datetime_obj = datetime.strptime(datetime_str, '%Y-%m-%d %H:%M:%S')
+  File "C:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "C:\Users\d.kato\AppData\Local\Programs\Python\Python310\lib\_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '2024-09-14T18:41' does not match format '%Y-%m-%d %H:%M:%S'
+2024-09-14 19:03:56,022 - command.basic.logger_config - ERROR - database is locked
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 41, in command_start_handler
+    self.db.insert_user_data(user_id=user_id, username=username)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 77, in insert_user_data
+    self.conn.commit()
+sqlite3.OperationalError: database is locked
+2024-09-14 19:06:02,993 - command.basic.logger_config - ERROR - database is locked
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 41, in command_start_handler
+    self.db.insert_user_data(user_id=user_id, username=username)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 77, in insert_user_data
+    self.conn.commit()
+sqlite3.OperationalError: database is locked
+2024-09-14 19:07:20,452 - command.basic.logger_config - ERROR - database is locked
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 41, in command_start_handler
+    self.db.insert_user_data(user_id=user_id, username=username)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 77, in insert_user_data
+    self.conn.commit()
+sqlite3.OperationalError: database is locked
+2024-09-14 19:13:04,255 - command.basic.logger_config - ERROR - Database.delete_program_post_data() takes 2 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 45, in post_programmed
+    self.db.delete_program_post_data(user_id, now)
+TypeError: Database.delete_program_post_data() takes 2 positional arguments but 3 were given
+2024-09-14 19:17:51,700 - command.basic.logger_config - ERROR - local variable 'user_id' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 45, in post_programmed
+    self.db.delete_program_post_data(user_id, now)
+UnboundLocalError: local variable 'user_id' referenced before assignment
+2024-09-14 19:19:18,855 - command.basic.logger_config - ERROR - local variable 'user_id' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 45, in post_programmed
+    self.db.delete_program_post_data(user_id, now)
+UnboundLocalError: local variable 'user_id' referenced before assignment
+2024-09-14 19:20:59,679 - command.basic.logger_config - ERROR - local variable 'user_id' referenced before assignment
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 45, in post_programmed
+    self.db.delete_program_post_data(user_id, now)
+UnboundLocalError: local variable 'user_id' referenced before assignment
+2024-09-20 23:38:47,437 - command.basic.logger_config - ERROR - Errore durante l'esecuzione di like: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 440, in like
+    await callback_query.answer(upvoted)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+2024-09-20 23:38:58,626 - command.basic.logger_config - ERROR - Errore durante l'esecuzione di like: Assert Exception:itr->get_vote_percent() != o.weight: Your current vote on this comment is identical to this vote.
+Traceback (most recent call last):
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 62, in rpcexec
+    reply = super(NodeRPC, self).rpcexec(payload)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\graphenerpc.py", line 479, in rpcexec
+    raise RPCError(ret['error']['message'])
+beemapi.exceptions.RPCError: Assert Exception:itr->get_vote_percent() != o.weight: Your current vote on this comment is identical to this vote.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 437, in like
+    self.beem.like_post(username, wif, authorperm)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\hive_request.py", line 194, in like_post
+    comment.vote(weight, account=account)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\comment.py", line 723, in vote
+    return self.blockchain.vote(weight, identifier, account=account)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\blockchaininstance.py", line 2058, in vote
+    return self.finalizeOp(op, account, "posting", **kwargs)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\blockchaininstance.py", line 937, in finalizeOp
+    ret = self.txbuffer.broadcast()
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\transactionbuilder.py", line 558, in broadcast
+    raise e
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\transactionbuilder.py", line 553, in broadcast
+    self.blockchain.rpc.broadcast_transaction(
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\graphenerpc.py", line 530, in method
+    r = self.rpcexec(query)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 84, in rpcexec
+    doRetry = self._check_error_message(e, self.error_cnt_call)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 174, in _check_error_message
+    raise exceptions.UnhandledRPCError(msg)
+beemapi.exceptions.UnhandledRPCError: Assert Exception:itr->get_vote_percent() != o.weight: Your current vote on this comment is identical to this vote.
+2024-09-20 23:48:39,263 - command.basic.logger_config - ERROR - Errore durante l'esecuzione di like: @menny.trx/test-20240920t213745z
+Traceback (most recent call last):
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 62, in rpcexec
+    reply = super(NodeRPC, self).rpcexec(payload)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\graphenerpc.py", line 479, in rpcexec
+    raise RPCError(ret['error']['message'])
+beemapi.exceptions.RPCError: Invalid parameters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\comment.py", line 166, in refresh
+    content = self.blockchain.rpc.get_post({"author": author, "permlink": permlink, "observer": self.observer}, api="bridge")
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\graphenerpc.py", line 530, in method
+    r = self.rpcexec(query)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 84, in rpcexec
+    doRetry = self._check_error_message(e, self.error_cnt_call)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 137, in _check_error_message
+    raise exceptions.InvalidParameters()
+beemapi.exceptions.InvalidParameters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 437, in like
+    self.beem.like_post(username, wif, authorperm)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\hive_request.py", line 193, in like_post
+    comment = Comment(authorperm=f"@{username}/{permlink}", blockchain_instance=hive)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\comment.py", line 75, in __init__
+    super(Comment, self).__init__(
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\blockchainobject.py", line 145, in __init__
+    self.refresh()
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\comment.py", line 176, in refresh
+    raise ContentDoesNotExistsException(self.identifier)
+beem.exceptions.ContentDoesNotExistsException: @menny.trx/test-20240920t213745z
+2024-09-20 23:59:24,305 - command.basic.logger_config - ERROR - Errore durante l'esecuzione di like: https://peakd\.com/hive\-180569/@tasuartsai\.hive/test\-20240920t213745z
+Traceback (most recent call last):
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 62, in rpcexec
+    reply = super(NodeRPC, self).rpcexec(payload)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\graphenerpc.py", line 479, in rpcexec
+    raise RPCError(ret['error']['message'])
+beemapi.exceptions.RPCError: Invalid parameters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\comment.py", line 166, in refresh
+    content = self.blockchain.rpc.get_post({"author": author, "permlink": permlink, "observer": self.observer}, api="bridge")
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\graphenerpc.py", line 530, in method
+    r = self.rpcexec(query)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 84, in rpcexec
+    doRetry = self._check_error_message(e, self.error_cnt_call)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beemapi\noderpc.py", line 137, in _check_error_message
+    raise exceptions.InvalidParameters()
+beemapi.exceptions.InvalidParameters
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 421, in like
+    permlink = self.beem.get_permlink(url)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\hive_request.py", line 197, in get_permlink
+    comment = Comment(post_url)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\comment.py", line 75, in __init__
+    super(Comment, self).__init__(
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\blockchainobject.py", line 145, in __init__
+    self.refresh()
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\beem\comment.py", line 176, in refresh
+    raise ContentDoesNotExistsException(self.identifier)
+beem.exceptions.ContentDoesNotExistsException: https://peakd\.com/hive\-180569/@tasuartsai\.hive/test\-20240920t213745z
+2024-09-21 17:42:09,904 - command.basic.logger_config - ERROR - Errore durante l'esecuzione di like: UNIQUE constraint failed: USER_POWER_VOTE.user_id
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 468, in set_voting_power
+    self.db.insert_user_power_vote(user_id, vote_power)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 314, in insert_user_power_vote
+    self.c.execute(f'''INSERT INTO {self.USER_POWER_VOTE} ({self.user_id}, {self.power_vote}) VALUES (?, ?)''', (user_id, power_vote))
+sqlite3.IntegrityError: UNIQUE constraint failed: USER_POWER_VOTE.user_id
+2024-09-21 17:42:29,040 - command.basic.logger_config - ERROR - database is locked
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\bot_action.py", line 45, in post_programmed
+    self.db.delete_program_post_data(now)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 289, in delete_program_post_data
+    self.c.execute(f'''
+sqlite3.OperationalError: database is locked
+2024-09-21 17:43:07,571 - command.basic.logger_config - ERROR - Errore durante l'esecuzione di like: near "AND": syntax error
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 468, in set_voting_power
+    self.db.insert_user_power_vote(user_id, vote_power)
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\basic\db.py", line 314, in insert_user_power_vote
+    self.c.execute(f'''INSERT AND REPLACE INTO {self.USER_POWER_VOTE} ({self.user_id}, {self.power_vote}) VALUES (?, ?)''', (user_id, power_vote))
+sqlite3.OperationalError: near "AND": syntax error
+2024-09-22 15:05:52,370 - command.basic.logger_config - ERROR - Telegram server says - Bad Request: BUTTON_DATA_INVALID
+Traceback (most recent call last):
+  File "C:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\command\user_commands.py", line 105, in recive_web_data
+    send_data = await bot.send_message(f"@{cur8_channel}", url, reply_markup=keyboard)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\bot.py", line 2909, in send_message
+    return await self(call, request_timeout=request_timeout)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\session\aiohttp.py", line 189, in make_request
+    response = self.check_response(
+  File "c:\Users\d.kato\Documents\PROGETTI\Cur8 Hive Bot\.venv\lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: BUTTON_DATA_INVALID
