@@ -1,6 +1,6 @@
 import logging
 
-TEST = False
+TEST = True
 
 if TEST:
     TOKEN = "6348055484:AAGhOv6sx5B4acQj-XUfRWV3kJz53FvioWs" #TasuAdmin

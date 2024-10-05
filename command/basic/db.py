@@ -1,5 +1,6 @@
 import sqlite3
 from datetime import datetime, timedelta
+
 class Database():
     def __init__(self):
         self.conn = sqlite3.connect('database.db')
@@ -15,11 +16,12 @@ class Database():
         self.TEMP_USER = 'TEMP_USER'
         self.PROGRAM_POST = 'PROGRAM_POST'
         self.USER_POWER_VOTE = 'USER_POWER_VOTE'
+        self.HIVE_NODE = 'HIVE_NODE'
 
         #columns
         self.user_id = "user_id"
         self.username = "username"      
-        self.steem_username = "hive_username"
+        self.steem_username = "steem_username"
         self.steem_post = "post"
         self.post_date = "post_date"
         self.channel_id = 'channel_id'
@@ -40,6 +42,7 @@ class Database():
         self.tags = 'tags'
         self.community = 'community'
         self.power_vote = 'power_vote'
+        self.hive_node = 'hive_node'
     pass
         
     def create_table(self):

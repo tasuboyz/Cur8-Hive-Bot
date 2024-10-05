@@ -10,9 +10,13 @@ from datetime import datetime
 
 process = True
 
+my_bot = BOT()
+
 async def on_start():
     Database().create_table()
     await bot.delete_webhook()  
+    my_bot.test_node()
+    
     print(f"{art}")    
     # while process:
     #     with open('log_file.txt', 'w') as f:
@@ -25,8 +29,7 @@ async def on_stop():
     print("Bot stoped")
 
 async def main():
-    try:       
-        my_bot = BOT()
+    try:               
         command = BotCommand()
         asyncio.create_task(on_start())
         asyncio.create_task(command.post_programmed())

@@ -11,13 +11,16 @@ import asyncio
 from datetime import datetime
 from command.basic.memory import Form
 from command.basic.language import Language
-
+from command.basic.hive_request import HiveNodeTester, Blockchain
+from command.basic.instance import hive_node
+from command.basic.db import Database
 class BOT():
     def __init__(self):
         self.dp = Dispatcher()
         self.admin_command = Admin_Commands()
         self.command = User_Commands()
         self.language = Language()
+        self.tester = HiveNodeTester()
 
         #admin command
         self.dp.message(Command('user'))(self.admin_command.admin_panel_commands)  
@@ -59,3 +62,12 @@ class BOT():
         #manage channel
         self.dp.my_chat_member(ChatMemberUpdatedFilter(IS_NOT_MEMBER >> IS_ADMIN))(self.command.bot_added)
         self.dp.my_chat_member(ChatMemberUpdatedFilter(IS_MEMBER >> IS_NOT_MEMBER))(self.command.bot_leaved)       
+
+    def test_node(self):
+        global hive_node
+        node = self.tester.find_fastest_node()
+        #print(f"The fastest node is: {node}")
+        hive_node = node
+        hive = Blockchain()
+        asyncio.create_task(hive.start_periodic_update())
+        return hive_node
